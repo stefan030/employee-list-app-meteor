@@ -3,7 +3,7 @@ import { createContainer } from 'meteor/react-meteor-data';
 import { Employees } from '../../imports/collections/employees';
 import EmployeeDetail from './employee_detail';
 
-const PER_PAGE = 20;
+const PER_PAGE = 4;
 let totalCards = PER_PAGE;
 
 class EmployeeList extends Component {
@@ -17,6 +17,7 @@ class EmployeeList extends Component {
         console.log(this.props.employees);
         return(
             <div>
+                <h1>Employee List App</h1>
                 <div className='employee-list'>
                     {this.props.employees.map(employee => {
                         return <EmployeeDetail key={employee._id} employee={employee} />

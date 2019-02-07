@@ -7,3 +7,14 @@
 .thumbnail {
     width: 300px;
 }
+
+h1 {
+    text-align: center;
+    color: #337ab7;
+    margin: 20px 0;
+}
+
+.btn {
+    display: block;
+    margin: 20px auto;
+}
