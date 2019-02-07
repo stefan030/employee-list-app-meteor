@@ -25,4 +25,10 @@ Meteor.startup(() => {
             });
         });
     }
+
+    // Set up publication
+    Meteor.publish('employees', function() {
+        // Only send back first 20 records
+        return Employees.find({}, { limit: 20 });
+    })
 });
