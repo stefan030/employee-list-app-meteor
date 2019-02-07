@@ -1,10 +1,14 @@
 import React from 'react';
+import EmployeeList from './../../client/components/employee_list';
 
 
 export default class App extends React.Component {
     render() {
         return (
-            <h1>Employee list!</h1>
+            <div>
+                <h1>Employee list!</h1>
+                <EmployeeList />
+            </div>
         )
     }
 }
