@@ -27,8 +27,8 @@ Meteor.startup(() => {
     }
 
     // Set up publication
-    Meteor.publish('employees', function() {
+    Meteor.publish('employees', function(per_page) {
         // Only send back first 20 records
-        return Employees.find({}, { limit: 20 });
+        return Employees.find({}, { limit: per_page });
     })
 });
